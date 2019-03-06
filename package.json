@@ -1,0 +1,21 @@
+{
+  "name": "Analytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Paolo Reyes",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.0",
+    "mariasql": "^0.2.6",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10",
+    "socket.io": "^2.2.0",
+    "ws": "^6.1.4"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/panel.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>BackTracking Panel</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-header">
+            <div class="nav-title">
+                The BackTracking App
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="login.html" >Log Out</a>
+        </div>
+    </div>
+
+    <!--Contenido-->
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h1 class="box-title"> 
+                            <div class="box-tools pull-right">
+                                <p> Total de visitas: <span id="visitas"></span></p>
+                                <p> Total de sesiones: <span id="sesiones"></span></p>
+                                <p> Total de clicks: <span id="clicks"></span></p>
+                                <p> Permanencia promedia: <span id="permanencia"></span></p>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <!-- centro -->
+                        <div class="panel-body table-responsive" style="height: 100%" id="listData">
+                            <span id="showData"></span>
+                                
+                        </div>
+
+                    </div><!-- /.box -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </section><!-- /.content -->
+
+    </div><!-- /.content-wrapper -->
+    <!--Fin-Contenido-->
+
+
+    <script src="./js/panel.js"></script>
+    <script src="./js/ws.js"></script>
+
+</body>
+
+</html>
